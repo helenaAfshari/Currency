@@ -7,11 +7,12 @@ import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;
 import 'dart:developer' as developer;
 import 'package:intl/intl.dart';
+
 void main() {
-  runApp(My());
+  runApp(MyApp());
 }
 
-class My extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -374,7 +375,8 @@ class add extends StatelessWidget {
       height: 50,
       decoration: BoxDecoration(boxShadow: const <BoxShadow>[
         BoxShadow(blurRadius: 1.0, color: Colors.grey)
-      ], color: Colors.red, borderRadius: BorderRadius.circular(1000)),
+      ], color: Colors.red, 
+      borderRadius: BorderRadius.circular(1000)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
